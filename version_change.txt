@@ -20,3 +20,10 @@ $ pyenv versions
   system
 * 3.7.6 (set by /Users/dale/.pyenv/version)
   3.8.1
+
+
+*if using conda
+
+$ conda search python
+
+conda install python=you want
