@@ -1,1 +1,22 @@
+* After installing python, to manage all versions of python.
 
+$ brew install pyenv
+
+$ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
+
+$ exec "$SHELL"
+
+$ pyenv install 3.7.6
+$ pyenv install 3.8.1
+
+$ pyenv global 3.8.1
+$ python -V
+Python 3.8.1
+➜  new-blog git:(new-contents) ✗ pyenv global 3.7.6
+➜  new-blog git:(new-contents) ✗ python -V
+Python 3.7.6
+
+$ pyenv versions
+  system
+* 3.7.6 (set by /Users/dale/.pyenv/version)
+  3.8.1
