@@ -1,5 +1,8 @@
 * After installing python, to manage all versions of python.
+1.
+ln -s -f /usr/local/bin/python3.9 /usr/local/bin/python
 
+2.
 $ brew install pyenv
 
 $ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
